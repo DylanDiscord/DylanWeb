@@ -1,13 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgb(26, 26, 26);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.contenedor{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.navegacion{
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+}
+.navegacion ul{
+  list-style: none;
+}
+.menu li {
+  display: inline-block;
+  position: relative;
+  left: 65%;
+}
+.menu > li > a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ padding: 15px 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Nunito', sans-serif;
+  filter: drop-shadow(1px 1px 10px #ececec);
+  text-decoration: none;
+  width: 100%;
+  font-size: 20px;
+}
+.menu li a:hover{
+  color: rgb(189, 189, 189);
+  filter: drop-shadow(1px 1px 10px #cffffb);
+  transition: all .8s;
+}
+.discord {
+  border-radius: 20px;
+  color: azure;
+  background-color: rgb(28, 206, 67);
+}
+.logo {
+  width: 20%;
+  height: 20%;
+  border-radius: 50px;
+  position: relative;
+  margin-left: 65%;
+  margin-top: 200px;
+}
+/* button {
+  background-color: rgb(28, 206, 67);
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  position: relative;
+  margin-left: 50%;
+  border-radius: 30px;
+  color: #ffff;
+  text-decoration: none;
+  padding: 15px 20px;
+  filter: drop-shadow(1px 1px 10px #2af545);
+} */
+.titulo  {
+  width: 100%;
+  top: -400px;
+  margin-left: 100px;
+  font-size: 70px;
+  font-family: 'Nunito', sans-serif;
+  color: #2af545;
+  position: relative;
+}
+.informacion {
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: #2af545;
+  text-align: center;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  background: rgb(41, 41, 41);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 13);
+  border-radius: 10px;
+  border-right: 2px solid rgb(0, 255, 115);
+}
+
+
+/*Media querys*/
+
+@media (orientation: portrait) {
+  .navegacion li {
+    width: 100%;
+    position: relative;
+    left: 65%;
+    margin: auto;
+  }
 }
